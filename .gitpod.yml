@@ -23,5 +23,5 @@ tasks:
     init: echo "init task..."
     command: echo "init command..."
   - name: "build project..."
-    init: gradle build -x test
+    init: ./gradlew build --build-cache -x test
     command: "prepare startup application..."
