@@ -10,11 +10,9 @@ jetbrains:
 
 vscode:
   extensions:
-    - vscjava.vscode-gradle
     - vscjava.vscode-spring-boot-dashboard
-    - vmware.vscode-boot-dev-pack
     - redhat.java
-    - fisenkodv.vscode-intellij-darcula-theme
+    - MoBalic.jetbrains-new-dark
     - donjayamanne.git-extension-pack
     - vscjava.vscode-java-pack
 
