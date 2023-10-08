@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GitpodApplication",
+            "request": "launch",
+            "mainClass": "com.example.GitpodApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch with Arguments Prompt",
             "request": "launch",
             "mainClass": "",

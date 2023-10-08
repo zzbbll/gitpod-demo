@@ -21,6 +21,7 @@ vscode:
 tasks:
   - before: echo "before task..."
     init: echo "init task..."
-    command: |
-      sdk list java
-      sdk list gradle
+    command: echo "init command..."
+  - name: "build project..."
+    init: gradle build -x test
+    command: "prepare startup application..."
