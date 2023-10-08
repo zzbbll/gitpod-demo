@@ -15,7 +15,6 @@ vscode:
     - MoBalic.jetbrains-new-dark
     - donjayamanne.git-extension-pack
     - vscjava.vscode-java-pack
-    - gitpod.gitpod-desktop
 
 additionalRepositories:
     - url: https://github.com/zzbbll/kubernetes-starter
