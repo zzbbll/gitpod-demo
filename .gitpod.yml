@@ -15,6 +15,11 @@ vscode:
     - MoBalic.jetbrains-new-dark
     - donjayamanne.git-extension-pack
     - vscjava.vscode-java-pack
+    - gitpod.gitpod-desktop
+
+additionalRepositories:
+    - url: https://github.com/zzbbll/kubernetes-starter
+      checkoutLocation: others
 
 tasks:
   - before: echo "before task..."
@@ -23,3 +28,6 @@ tasks:
   - name: "build project..."
     init: chmod 755 ./gradlew && ./gradlew build --build-cache -x test
     command: "prepare startup application..."
+  - name: "other project"
+    init: echo "init other project..."
+    command: echo "command other project..."
