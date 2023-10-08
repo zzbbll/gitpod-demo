@@ -1,7 +1,7 @@
 image:
   file: gitpod/Dockerfile
 
-workspaceLocation: '.'
+#workspaceLocation: '.'
 #checkoutLocation: '/workspace'
 
 jetbrains:
