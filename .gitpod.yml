@@ -1,12 +1,22 @@
 image:
   file: gitpod/Dockerfile
 
-#workspaceLocation: '.'
-checkoutLocation: '/workspace'
+workspaceLocation: '.'
+#checkoutLocation: '/workspace'
 
 jetbrains:
   intellij:
     vmoptions: '-Xmx4g'
+
+vscode:
+  extensions:
+    - vscjava.vscode-gradle
+    - vscjava.vscode-spring-boot-dashboard
+    - vmware.vscode-boot-dev-pack
+    - redhat.java
+    - fisenkodv.vscode-intellij-darcula-theme
+    - donjayamanne.git-extension-pack
+    - vscjava.vscode-java-pack
 
 tasks:
   - before: echo "before task..."

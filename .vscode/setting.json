@@ -1,0 +1,5 @@
+{
+  "redhat.telemetry.enabled": false,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "intellij-vscode-soft-dark-theme"
+}
