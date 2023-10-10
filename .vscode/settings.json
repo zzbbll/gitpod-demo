@@ -1,5 +1,7 @@
 {
   "redhat.telemetry.enabled": false,
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "MoBalic.jetbrains-new-dark"
+  "workbench.colorTheme": "MoBalic.jetbrains-new-dark",
+  // "java.import.gradle.home": "E:\\software\\gradle_install\\gradle-8.0.2",
+  // "java.import.gradle.java.home": "E:\\software\\jdk17_install",
 }

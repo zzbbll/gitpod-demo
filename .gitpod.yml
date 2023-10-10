@@ -15,6 +15,11 @@ vscode:
     - MoBalic.jetbrains-new-dark
     - donjayamanne.git-extension-pack
     - vscjava.vscode-java-pack
+    # remote
+    - gitpod.gitpod-desktop
+    - ms-vscode-remote.remote-ssh
+    - ms-vscode-remote.remote-ssh-edit
+    - ms-vscode.remote-explorer
 
 additionalRepositories:
     - url: https://github.com/zzbbll/kubernetes-starter
