@@ -2,6 +2,8 @@
   "redhat.telemetry.enabled": false,
   "editor.minimap.enabled": false,
   "workbench.colorTheme": "MoBalic.jetbrains-new-dark",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+  "java.compile.nullAnalysis.mode": "disabled",
   // "java.import.gradle.home": "E:\\software\\gradle_install\\gradle-8.0.2",
   // "java.import.gradle.java.home": "E:\\software\\jdk17_install",
 }
