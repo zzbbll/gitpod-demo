@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  postgresql:
+    build: postgresql
+    image: ehm-postgresql
+    container_name: ehm-postgresql
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - type: volume
+        source: postgresql
+        target: /var/lib/postgresql/data
+
+volumes:
+  postgresql:
+networks:
+  ehm:
+    driver: bridge

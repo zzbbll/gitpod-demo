@@ -1,0 +1,6 @@
+UPDATE
+    workflow.def_rule
+SET
+    is_active=false
+WHERE
+    rule_key IN ('GIMS_SERVICE_UPDATE_BUSINESS_RULE', 'GIMS_SERVICE_SIMULATION_BUSINESS_RULE');

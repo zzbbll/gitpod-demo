@@ -1,0 +1,25 @@
+IMAGE_NAME ?= ehm-com.kingland.ehm.aio
+CONTAINER_NAME ?= $(IMAGE_NAME)
+DOCKER_RUN_OPT ?= -p 8080:8080
+
+default: run
+
+run: build
+	@echo.&echo Creating and run a new '$(CONTAINER_NAME)' container ...
+	@docker run -d --name $(CONTAINER_NAME) $(DOCKER_RUN_OPT) $(IMAGE_NAME)
+	@echo.&echo Run the docker completed.
+build: Dockerfile
+	@echo.&echo Building a new '$(IMAGE_NAME)' docker image ...
+	@docker build . -f $< -t $(IMAGE_NAME)
+rm: stop
+	@echo.&echo Removing the existing '$(CONTAINER_NAME)' container ...
+	@docker rm $(CONTAINER_NAME) -f
+stop:
+	@echo Stopping existing '${CONTAINER_NAME}' container ...
+	@docker stop $(CONTAINER_NAME)
+
+rebuild: exe-rm run
+
+# Run the "rm" target in another process
+exe-rm:
+	@make -i -B rm
