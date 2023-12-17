@@ -10,4 +10,4 @@ ENV \
     POSTGRES_PASSWORD=ehm \
     PGDATA=/var/lib/postgresql/data/pgdata
 
-COPY initdb/ /docker-entrypoint-initdb.d/
+#COPY initdb/ /docker-entrypoint-initdb.d/
